@@ -3,7 +3,7 @@
 
 namespace util {
     template <class _T>
-    _T read(std::istream& is = std::cin) {
+    _T scan(std::istream& is = std::cin) {
         _T temp;
         is >> temp;
         return temp;
@@ -11,5 +11,5 @@ namespace util {
 }
 
 int main() {
-    
+    int a = util::scan <int>();
 }
