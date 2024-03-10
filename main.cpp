@@ -128,12 +128,6 @@ int main() {
 		}
 	}
 
-	/*for (size_t i = 0; i != mask.width(); i++) {
-		for (size_t j = 0; j != mask.height(); j++)
-			std::cout << mask.at(j, i);
-		std::cout << '\n';
-	}*/
-
 	for (size_t i = 0; i != 64; i++)
 		result += mask.at(i % 8, i / 8);
 	std::cout << (64 - result);
